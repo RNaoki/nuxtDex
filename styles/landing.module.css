@@ -1,0 +1,93 @@
+.pokedex {
+  display: flex;
+  width: 598px;
+  height: 835px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  animation: bouncing 1.5s linear infinite;
+}
+
+.pokedex:hover {
+  animation-play-state: paused;
+}
+
+.pokemon-container {
+  position: absolute;
+  width: 292px;
+  height: 227px;
+  left: 120px;
+  top: 225px;
+  background-color: red;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/DexBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid black;
+}
+
+.pokemon {
+  margin-top: 110px;
+}
+
+.pokedex-buttons {
+  position: absolute;
+  bottom: 198px;
+  right: 149px;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  width: 105px;
+}
+
+.button {
+  background-color: purple;
+  width: 40px;
+  height: 45px;
+}
+
+.loading {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loading 1.2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 5px;
+  }
+  50% {
+    top: 30px;
+  }
+  75% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}

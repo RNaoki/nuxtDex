@@ -1,16 +1,19 @@
 <template>
-  <div class="pokedex">
-    <img src="/Pokedex.png" />
-    <div v-if="loading" class="pokemon-container">
-      <i class="loading"></i>
+  <div class="container">
+    <div class="pokedex">
+      <img src="/Pokedex.png" />
+      <div v-if="loading" class="pokemon-container">
+        <i class="loading"></i>
+      </div>
+      <div v-else class="pokemon-container">
+        <img v-bind:src="pokemon.sprite" class="pokemon" />
+      </div>
+      <div class="pokedex-buttons">
+        <div class="button" v-on:click="getPreviousPokemon()"></div>
+        <div class="button" v-on:click="getNextPokemon()"></div>
+      </div>
     </div>
-    <div v-else class="pokemon-container">
-      <img v-bind:src="pokemon.sprite" class="pokemon" />
-    </div>
-    <div class="pokedex-buttons">
-      <div class="button" v-on:click="getPreviousPokemon()">A</div>
-      <div class="button" v-on:click="getNextPokemon()">B</div>
-    </div>
+    <div>a</div>
   </div>
 </template>
 

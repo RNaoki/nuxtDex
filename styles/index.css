@@ -3,4 +3,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
+}
+
+#__nuxt {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
 }

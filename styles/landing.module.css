@@ -37,14 +37,12 @@
   position: absolute;
   bottom: 198px;
   right: 149px;
-  background-color: green;
   display: flex;
   justify-content: space-between;
   width: 105px;
 }
 
 .button {
-  background-color: purple;
   width: 40px;
   height: 45px;
 }
